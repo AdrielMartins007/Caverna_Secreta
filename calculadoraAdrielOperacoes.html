@@ -1,0 +1,30 @@
+<meta charset = UTF-8>
+<script>
+    //PEGA OS DADOS DOS USUÁRIOS
+    var num1 = Number(prompt("qual o primeiro numero: "));
+
+    var operacao = prompt("qual a operação? ");
+
+    var num2 = Number(prompt("qual o segundo numero: "));
+
+    if(operacao == '+'){
+        var soma = num1 + num2;
+        alert("o resultado é: " + soma);
+
+    }else if(operacao == '-'){
+        var subtracao = num1 - num2;
+        alert("o resultado é: " + subtracao);
+
+    }else if(operacao == '*'){
+        var multiplicacao = num1 * num2;
+        alert("o resultado é " + multiplicacao);
+
+    }else if(operacao == '/'){
+        if(num2 == 0){
+            alert(num1 +" nao pode ser divido por zero!");
+        }else {
+            divisao = num1 / num2
+            alert("o resultado é " + divisao);
+        }
+    }
+</script>
